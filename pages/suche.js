@@ -20,7 +20,7 @@ export default function Suche(res) {
     async function fetchBigText() {
       try {
         const response = await fetch(
-          `http://localhost:3000/api/uppercase?text=${debouncedText}`
+          `/api/uppercase?text=${debouncedText}`
         );
         if(!response.ok){}
         const bigTextData = await response.json();
